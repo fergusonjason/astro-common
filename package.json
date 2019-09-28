@@ -1,0 +1,21 @@
+{
+  "name": "astro-common",
+  "version": "1.0.0",
+  "description": "Common code for astro-* services and clients",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all clean tsc",
+    "clean": "rimraf dist/*",
+    "start": "node ./dist/app.js",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.5.18"
+  }
+}
